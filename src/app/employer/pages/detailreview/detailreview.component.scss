@@ -1,0 +1,186 @@
+#emp {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: x-large;
+  font-weight: 400;
+  opacity: 1;
+}
+
+#emp td, #emp th {
+  //border: 1px solid #ddd;
+  font-family: "Impact", Arial, Helvetica, sans-serif;
+  padding: 8px;
+  border-collapse: collapse;
+  color:black;
+}
+
+#emp th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bgset{
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Roboto, Helvetica, Arial, serif;
+  //background: url(http://www.hdwallsource.com/img/2014/10/blurred-36379-37207-hd-wallpapers.jpg);
+  background-size: cover;
+  overflow: scroll;
+  border-radius: 15px 20px 25px 30px;
+}
+.head{
+  margin-top: 50px;
+  border-radius: 15px 20px 25px 30px;
+  overflow: scroll;
+  height: 500px;
+  width : 100%;
+}
+.head::-webkit-scrollbar{
+  background : transparent;
+}
+.bgset::-webkit-scrollbar{
+  background : transparent;
+}
+li{
+  font-size : 16px;
+  font-weight : lighter;
+  font-style: italic;
+  font-family: Monaco, "Lucida Console", monospace;
+}
+h4{
+  font-size : 20px;
+  font-weight : bold;
+  font-style: italic;
+  font-family: Monaco, "Lucida Console", monospace;
+
+}
+.para{
+  //background-color: #97c6e8;
+  position: relative;
+  margin-top: 3%;
+  margin-left: 10%;
+  //margin-right: 5%;
+  padding: 100px;
+  border-radius: 15px 20px 15px 25px;
+  text-align: center;
+  color: black;
+  font-size: larger;
+  font-weight: 900;
+  border-spacing: 10px;
+  font-size: 1vw;
+
+}
+.uiv{
+  width: 900px;
+}
+.bt{
+  border-radius: 12px;
+  width: 250px;
+}
+.b3{
+  border-radius: 10px;
+  width: 150px;
+}
+.main-content{
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.4);
+  margin: 5em auto;
+  display: flex;
+}
+.company__info{
+  background-color: #56af40;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.fa-android{
+  font-size:5em;
+}
+@media screen and (max-width: 640px) {
+  .main-content{width: 90%;}
+  .company__info{
+    display: none;
+  }
+  .login_form{
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+  }
+  .para{
+    font-size: 2vw;
+  }
+  .btn{
+    font-size: 2vw;
+  }
+  .uiv{
+    width: 400px;
+  }
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+  .main-content{width: 70%;}
+}
+.row > h1{
+  color:#56af40;
+  text-decoration: underline;
+  font-size: 2vw;
+}
+.login_form{
+  background-color: #fff;
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+  border-top:1px solid #ccc;
+  border-right:1px solid #ccc;
+}
+form{
+  padding: 0 2em;
+  width: 100%;
+
+}
+.form__input{
+  width: 100%;
+  border:0px solid transparent;
+  border-radius: 0;
+  border-bottom: 1px solid #aaa;
+  padding: 1em .5em .5em;
+  padding-left: 2em;
+  outline:none;
+  margin:1.5em auto;
+  transition: all .5s ease;
+  text-align: center;
+  font-weight: bold;
+}
+.form__input:focus{
+  border-bottom-color: #008080;
+  box-shadow: 0 0 5px rgba(0,80,80,.4);
+  border-radius: 4px;
+  text-align: center;
+}
+.btn{
+  transition: all .5s ease;
+  width: 100%;
+  border-radius: 30px;
+  color:#56af40;
+  font-weight: 400;
+  background-color: #fff;
+  border: 1px solid #56af40;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.btn:hover, .btn:focus{
+  background-color: #56af40;
+  color:#fff;
+}
+.he{
+  margin-top: 30px;
+}
+.head::-webkit-scrollbar{
+  background : transparent;
+}

@@ -1,0 +1,61 @@
+<div class="head">
+  <div *ngFor="let inf of information;" class="head1">
+    <div id="fb">
+      <div id="fb-top">
+                <img src="../../../../assets/images/employee/avatar.jpg" height="100" width="100" alt="">
+        <p><a (click)="employer(inf.ReceiverName)"><b>{{inf.receivername}}</b></a><span> &bull; To</span></p>
+      </div>
+<!--      <img src="../../../../assets/images/employee/mono.png" height="100" width="100" alt="">-->
+      <p id="info"> <br> <a (click)="employee(inf.EmployeeEmail)"><span>{{ inf.employeename}}</span></a></p>
+      <div id="button-block">
+        <button class="btn btn-danger" (click)="remove(inf._id)" id="btnsuccess">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="head">
+  <h1>Request Sent</h1>
+  <div *ngFor="let inf of information;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <pre>From {{inf.EmployeeEmail}}</pre>
+          <pre>To {{inf.ReceiverName}}</pre>
+          <button class="btn btn-primary" (click)="remove(inf._id)" style="height: 50px; width: 150px;">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+
+<!--<div class="bgset head" >-->
+<!--  <div class="container">-->
+<!--    <div class="row" *ngFor="let inf of information;">-->
+<!--      <div class="col-5 offset-1">-->
+<!--        <h1>Request Pending</h1>-->
+<!--        <div class="container">-->
+<!--          <div class="row">-->
+<!--            <div class="col-3 offset-1">-->
+<!--              <div>-->
+<!--                <img src='../../../../assets/images/employee/6416569.png'>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-5 offset-1">-->
+<!--              <div class="container">-->
+<!--                <div class="row">-->
+<!--                  <div class="col">-->
+<!--                    <pre>From {{inf.EmployeeEmail}}</pre>-->
+<!--                    <pre>To {{inf.ReceiverStatus}}</pre>-->
+<!--                    <button class="btn btn-primary" style="height: 50px; width: 150px;">Remove</button>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+

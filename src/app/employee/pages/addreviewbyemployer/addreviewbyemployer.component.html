@@ -1,0 +1,66 @@
+
+<div class="para">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h1>Employer to Employee</h1>
+      <h3>{{msg}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="form-group row">
+        <input type="text" class="form__input" placeholder="Good" [(ngModel)]="review.good" required/>
+      </div>
+      <div class="form-group row">
+        <form [formGroup]="reviewForm">
+          <div formArrayName="goodreviews">
+            <div *ngFor="let good of goodreviews().controls; let empIndex=index">
+              <div [formGroupName]="empIndex">
+                <div>
+                  <input type="text" class="form__input" formControlName="goodreview" placeholder="{{empIndex+2}} Good">
+                  <button class="btn btn-danger" (click)="removeGoodReview(empIndex)">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <button class="btn btn-success" (click)="addGoodReview()">Add Good Review</button>
+      </div>
+      <div class="form-group row">
+        <input type="text" class="form__input" placeholder="Bad" [(ngModel)]="review.bad" required/>
+      </div>
+      <div class="form-group row">
+        <form [formGroup]="reviewForm">
+          <div formArrayName="badreviews">
+            <div *ngFor="let bad of badreviews().controls; let empIndex=index">
+              <div [formGroupName]="empIndex">
+                <div>
+                  <input type="text" class="form__input" formControlName="badreview" placeholder="{{empIndex+2}}Bad">
+                  <button class="btn btn-danger" (click)="removebadReview(empIndex)">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <button class="btn btn-success" (click)="addBadReview()">Add Bad review</button>
+      </div>
+      <div class="form-group row">
+        <input type="text" class="form__input" placeholder="Position" [(ngModel)]="review.position" required/>
+      </div>
+      <div class="form-group row">
+        <input type="number" class="form__input" placeholder="Rating" [(ngModel)]="review.rating" required/>
+      </div>
+      <div class="form-group row">
+        <input type="text" class="form__input" placeholder="Review" [(ngModel)]="review.review" required/>
+      </div>
+      <div class="form-group row">
+        <button class="btn btn-success" (click)="add()">Submit Review</button>
+      </div>
+
+    </div>
+  </div>
+</div>

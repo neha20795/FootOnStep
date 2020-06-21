@@ -1,0 +1,16 @@
+<div *ngIf="!_auth.isLoggedIn(); then push2 else push1"></div>
+
+<ng-template #push2>
+  <div class="head">
+    <app-login></app-login>
+  </div>
+</ng-template>
+<ng-template #push1>
+  <div class="head">
+    <app-dashboard></app-dashboard>
+  </div>
+</ng-template>
+
+<div>
+  <app-howwework></app-howwework>
+</div>

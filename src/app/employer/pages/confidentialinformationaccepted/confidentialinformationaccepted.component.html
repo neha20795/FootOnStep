@@ -1,0 +1,67 @@
+<div class="head">
+  <div *ngFor="let inf of information;" class="head1">
+    <div id="fb">
+      <div id="fb-top">
+        <p><img src="../../../../assets/images/employer/mono.png" height="50" width="50" alt="">
+          <a (click)="employer(inf.ReceiverName)"><b>{{inf.receivername}}</b></a><span> &bull; From</span></p>
+      </div>
+      <img src="../../../../assets/images/employee/avatar.jpg" height="100" width="100" alt="">
+      <p id="info"> <br> <a (click)="employee(inf.EmployeeEmail)"><span>{{ inf.employeename}}</span></a></p>
+      <div id="button-block">
+        <button class="btn btn-info" (click)="detail(inf._id)" id="btnsuccess">Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="head">
+  <h1>Information List</h1>
+  <div *ngFor="let inf of information;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <pre>From {{inf.ReceiverName}}</pre>
+          <pre>For {{inf.EmployeeEmail}}</pre>
+          <button class="btn btn-primary" (click)="detail(inf._id)" style="height: 50px; width: 150px;">View Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+
+<!--
+<div class="bgset head" >
+  <div class="container">
+    <div class="row" *ngFor="let inf of information;">
+      <div class="col-5 offset-1">
+        <h1>Request Pending</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 offset-1">
+              <div>
+                <img src='../../../../assets/images/employee/6416569.png'>
+              </div>
+            </div>
+            <div class="col-5 offset-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <pre>From {{inf.SenderemailId}}</pre>
+                    <pre>To {{inf.EmployeeEmail}}</pre>
+                    <button class="btn btn-primary" style="height: 50px; width: 150px;">Decline</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+

@@ -1,0 +1,76 @@
+
+<div class="para">
+  <div class="row">
+
+    <div class="col-8 offset-2">
+      <h1>Update Details</h1>
+      <div class="form-group row">
+        <label>Fname</label>
+        <input type="text" class="form-control" [(ngModel)]="empDetails.fname" disabled/>
+      </div>
+      <div class="form-group row">
+        <label>Lname</label>
+        <input type="text" class="form__input" [(ngModel)]="empDetails.lname" disabled/>
+      </div>
+      <!--        <div class="form-group row">-->
+      <!--          <label>Email Id</label>-->
+      <!--          <input type="text" class="form-control" [(ngModel)]="empDetails.email" disabled/>-->
+      <!--        </div>-->
+      <div class="form-group row">
+        <label>Mobile</label>
+        <input type="text" class="form__input" [(ngModel)]="mob" required/>
+      </div>
+      <div class="form-group row">
+        <label>Gender</label>
+        <input type="text" class="form__input" [(ngModel)]="empDetails.gender" disabled/>
+      </div>
+      <!--        <div class="form-group row">-->
+      <!--          <label>Date of Birth</label>-->
+      <!--          <input type="text" class="form-control" [(ngModel)]="empDetails.dob" disabled/>-->
+      <!--        </div>-->
+      <div class="form-group row">
+        <label>Experience</label>
+        <input type="number" class="form__input" [(ngModel)]="empDetails.experience" required/>
+      </div>
+      <div class="form-group row">
+        <label>Organization</label>
+        <input type="text" class="form__input" [(ngModel)]="empDetails.organization" required/>
+      </div>
+      <div class="form-group row">
+        <label>Address</label>
+        <div class="form-group row">
+          <label>House/Flat no.</label>
+          <input type="text" class="form__input" [(ngModel)]="empDetails.address.house_no" required/>
+        </div>
+        <div class="form-group row">
+          <label>Street</label>
+          <input type="text" class="form__input" [(ngModel)]="empDetails.address.street" required/>
+        </div>
+        <div class="form-group row">
+          <label>Town</label>
+          <input type="text" class="form__input" [(ngModel)]="empDetails.address.town" required/>
+        </div>
+        <div class="form-group row">
+          <label>City</label>
+          <input type="text" class="form__input" [(ngModel)]="empDetails.address.city" required/>
+        </div>
+        <div class="form-group row">
+          <label>State</label>
+          <input type="text" class="form__input" [(ngModel)]="empDetails.address.state" required/>
+        </div>
+        <div class="form-group row">
+          <label>Country</label>
+          <input type="text" class="form__input" [(ngModel)]="empDetails.address.country" required/>
+        </div>
+        <div class="form-group row">
+          <label>Pin-Code</label>
+          <input type="text" class="form__input" [(ngModel)]="empDetails.address.pincode" required/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <button class="btn btn-success" (click)="update()">Update</button>
+        <button class="btn btn-success" (click)="addmore()">More</button>
+      </div>
+    </div>
+  </div>
+</div>

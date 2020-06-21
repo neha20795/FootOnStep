@@ -1,0 +1,63 @@
+<div class="head">
+  <div *ngFor="let inf of information;" class="head1">
+    <div id="fb">
+      <div id="fb-top">
+        <img src="../../../../assets/images/employer/mono.png" height="50" width="50" alt="">
+        <p><a (click)="employer(inf.SenderemailId)"><b>{{inf.sendername}}</b></a><span> &bull; To</span></p>
+      </div>
+      <img src="../../../../assets/images/employee/avatar.jpg" height="100" width="100" alt="">
+      <p id="info"><a (click)="employee(inf.EmployeeEmail)"><b>{{inf.employeename}}</b></a> <br></p>
+      <div id="button-block">
+        <button class="btn btn-success" (click)="accept(inf)" id="btnsuccess">Accept</button><br/><br/>
+        <button class="btn btn-danger" (click)="remove(inf._id)" id="btnsuccess1">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+    </div>
+  </div>
+</div>
+<div class="head">
+  <h1>Information Request</h1>
+  <div *ngFor="let inf of information;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <pre>For {{inf.EmployeeEmail}}</pre>
+          <pre>From {{inf.SenderemailId}}</pre>
+          <button class="btn btn-primary" (click)="accept(inf)" style="height: 50px; width: 150px;">Add Detail</button>
+          <button class="btn btn-primary" (click)="remove(inf._id)" style="height: 50px; width: 150px;">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+<!--
+<div class="head" >
+  <div class="container">
+    <div class="row" *ngFor="let inf of information;">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-5 offset-1">
+              <div class="container">
+                <div class="row">
+                    <pre>From {{inf.SenderemailId}}</pre>
+                    <pre>For {{inf.EmployeeEmail}}</pre>
+                    <button class="btn btn-primary"(click)="accept(inf)" style="height: 50px; width: 150px;">Accept</button>
+                    <button class="btn btn-primary" style="height: 50px; width: 150px;">Decline</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+-->
+
+

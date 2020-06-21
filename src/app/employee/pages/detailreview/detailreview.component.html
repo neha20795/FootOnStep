@@ -1,0 +1,50 @@
+
+
+  <div class="head">
+              <div *ngFor=" let empe of employee">
+                <div class="container mt-6 uiv">
+                  <h2>Anonymous</h2>
+                  <p></p>
+                  <div class="media border p-3 si">
+                    <img src="../../../../assets/images/employer/mono.png" alt="" class="mr-3 ml-4 mt-6 rounded-circle" style="width:100px; height: 150px;">
+                    <div class="media-body">
+                      <h4>Good</h4>
+                        <ul>
+                          <div *ngFor="let good of empe.good">
+                            <li>{{good}}</li>
+                          </div>
+                        </ul>
+                      <h4>Bad</h4>
+                      <ul>
+                        <div *ngFor="let bad of empe.bad">
+                          <li>{{bad}}</li>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div *ngFor=" let empr of employer">
+              <div class="container mt-6 uiv">
+                <h2>Anonymous</h2>
+                <p></p>
+                <div class="media border p-3 si">
+                  <img src="../../../../assets/images/employee/avatarreview.jpg" alt="" class="mr-4 mt-6 ml-4 rounded-circle" style="width:100px; height:150px;">
+                  <div class="media-body">
+                    <h4>Good</h4>
+                    <ul>
+                        <li>{{empr.good}}</li>
+                    </ul>
+                    <h4>Bad</h4>
+                    <ul>
+                        <li>{{empr.bad}}</li>
+                    </ul>
+                    <h4>Review</h4>
+                    <ul>
+                        <li>{{empr.review}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </div>

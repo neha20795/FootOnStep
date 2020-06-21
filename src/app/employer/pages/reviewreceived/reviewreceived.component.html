@@ -1,0 +1,75 @@
+<div class="head">
+  <div *ngFor=" let empe of employer">
+    <div class="container mt-6" style="width: 900px">
+      <h2>Anonymous</h2>
+      <p></p>
+      <div class="media border p-3">
+        <img src="../../../../assets/images/employer/mono.png" alt="" class="mr-3 ml-4 mt-6 rounded-circle" style="width:100px; height: 150px;">
+        <div class="media-body">
+          <h4>Pros</h4>
+          <ul>
+<!--            <div *ngFor="let good of empe.pros">-->
+              <li>{{empe.pros}}</li>
+<!--            </div>-->
+          </ul>
+          <h4>Cons</h4>
+          <ul>
+<!--            <div *ngFor="let bad of empe.cons">-->
+              <li>{{empe.cons}}</li>
+<!--            </div>-->
+          </ul>
+          <h4>Type</h4>
+          <ul>
+            <li>{{empe.type}}</li>
+          </ul>
+          <h4>Rating</h4>
+          <ul>
+            <li>{{empe.rating}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!--
+<div class="head">
+  <div class="fluid-container">
+    <div class="row">
+
+      <div class="col-8 offset-2">
+        <div *ngFor=" let empr of employer">
+          <div class="bgset">
+            <div class="card-body">
+              <table id="emp">
+                <tr>
+                  <td>Organization</td>
+                  <td>{{empr.orgid}}</td>
+                </tr>
+                <tr>
+                  <td>Pros</td>
+                  <td>{{empr.pros | json}}</td>
+                </tr>
+                <tr>
+                  <td>Cons</td>
+                  <td>{{empr.cons | json}}</td>
+                </tr>
+                <tr>
+                  <td>Rating</td>
+                  <td>{{empr.rating}}</td>
+                </tr>
+                <tr>
+                  <td>Type</td>
+                  <td>{{empr.type}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->

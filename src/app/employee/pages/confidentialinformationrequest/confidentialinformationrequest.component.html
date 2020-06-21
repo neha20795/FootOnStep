@@ -1,0 +1,15 @@
+<div class="head">
+  <div *ngFor="let inf of information;" class="head1">
+    <div id="fb">
+      <div id="fb-top">
+        <p><b>{{inf.sendername}}</b><span> &bull; To</span></p>
+      </div>
+      <img src="../../../../assets/images/employer/mono.png" height="100" width="100" alt="">
+      <p id="info"><a (click)="employer(inf.ReceiverName)"><b>{{inf.receivername}}</b></a><br></p>
+      <div id="button-block">
+        <button class="btn btn-success" (click)="accept(inf)" id="btnsuccess">Accept</button><br/><br/>
+        <button class="btn btn-danger"  id="btnsuccess1">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

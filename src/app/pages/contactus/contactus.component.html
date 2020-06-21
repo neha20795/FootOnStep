@@ -1,0 +1,26 @@
+
+<div class="para">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="form-group row">
+        <label>Email</label>
+        <input type="email" class="form-control" [(ngModel)]="contact.email" required/>
+      </div>
+      <div class="form-group row">
+        <label>Mobile</label>
+        <input type="text" class="form-control" [(ngModel)]="contact.mobile" required/>
+      </div>
+      <div class="form-group row">
+        <label>Purpose</label>
+        <input type="text" class="form-control" [(ngModel)]="contact.purpose" required/>
+      </div>
+      <div class="form-group row">
+        <label>Detail</label>
+        <input type="text" class="form-control" [(ngModel)]="contact.detail" required/>
+      </div>
+      <div>
+        <button class="button b3" (click)="send()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

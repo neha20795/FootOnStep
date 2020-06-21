@@ -1,0 +1,359 @@
+<div class="para">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <pre>{{message}}</pre>
+      <div class="form-group row">
+        <form [formGroup]="myForm">
+          <!--For Fname-->
+          <div class="form-group">
+
+            <input [ngClass]="{'is-invalid': submitted && myForm.controls.fname.errors}" type="text" placeholder="First Name" formControlName='fname' required class="form__input" />
+            <div *ngIf="submitted && myForm.controls.fname.errors">
+              <div *ngIf="submitted && myForm.controls.fname.errors.required" class="text-danger">
+                Enter your First Name
+              </div>
+              <div *ngIf="submitted && myForm.controls.fname.errors.fname">
+                You must Enter Valid First Name
+              </div>
+            </div>
+          </div>
+          <!--Last Name-->
+          <div class="form-group">
+
+            <input [ngClass]="{'is-invalid': submitted && myForm.controls.lname.errors}" type="text" placeholder="Last Name" formControlName='lname' required class="form__input" />
+            <div *ngIf="submitted && myForm.controls.lname.errors">
+              <div *ngIf="submitted && myForm.controls.lname.errors.required" class="text-danger">
+                Enter your Last Name
+              </div>
+              <div *ngIf="submitted && myForm.controls.lname.errors.lname">
+                You must Enter Valid Last Name
+              </div>
+            </div>
+          </div>
+          <!--Date if Birth-->
+          <div class="form-group">
+
+            <input [ngClass]="{'is-invalid': submitted && myForm.controls.dob.errors}" placeholder="Date of Birth" type="date" formControlName='dob' required class="form__input" />
+            <div *ngIf="submitted && myForm.controls.dob.errors">
+              <div *ngIf="submitted && myForm.controls.dob.errors.required" class="text-danger">
+                Enter Your D.O.B
+              </div>
+              <div *ngIf="submitted && myForm.controls.dob.errors.dob">
+                You must enter Valid Date of Birth
+              </div>
+            </div>
+          </div>
+          <!--Email-->
+          <div class="form-group">
+            <input [ngClass]="{'is-invalid': submitted && myForm.controls.email.errors}" placeholder="Email ID" type="text" formControlName='email' required class="form__input" />
+            <div *ngIf="submitted && myForm.controls.email.errors">
+              <div *ngIf="submitted && myForm.controls.email.errors.required" class="text-danger">
+                Enter Your Email ID
+              </div>
+              <div *ngIf="submitted && myForm.controls.email.errors.email">
+                You must Enter Valid Email ID
+              </div>
+            </div>
+          </div>
+          <!--Password-->
+          <div class="form-group">
+            <input [ngClass]="{'is-invalid': submitted && myForm.controls.password.errors}" placeholder="Password" type="password" formControlName="password" required class="form__input" />
+            <div *ngIf="submitted && myForm.controls.password.errors">
+              <div *ngIf="submitted && myForm.controls.password.errors.required" class="text-danger">
+                Password is must
+            </div>
+              <div *ngIf="submitted && myForm.controls.password.errors.password">
+                You must Enter Password in the combination of A@a1#
+              </div>
+          </div>
+          <!--Address-->
+            <!--House No-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.house_no.errors}" placeholder="House No" type="number" formControlName='house_no' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.house_no.errors">
+                <div *ngIf="submitted && myForm.controls.house_no.errors.required" class="text-danger">
+                  Enter your House Number
+                </div>
+                <div *ngIf="submitted && myForm.controls.house_no.errors.house_no">
+                  You must Enter Valid house_no
+                </div>
+              </div>
+            </div>
+              <!--Street-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.street.errors}" type="text" placeholder="Street" formControlName='street' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.street.errors">
+                <div *ngIf="submitted && myForm.controls.street.errors.required" class="text-danger">
+                  Enter your Street Address
+                </div>
+                <div *ngIf="submitted && myForm.controls.street.errors.street">
+                  You must Enter Valid Street Address
+                </div>
+              </div>
+            </div>
+              <!--Town-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.town.errors}" type="text" placeholder="Town" formControlName='town' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.town.errors">
+                <div *ngIf="submitted && myForm.controls.town.errors.required" class="text-danger">
+                  Enter your Town Name
+                </div>
+                <div *ngIf="submitted && myForm.controls.town.errors.town">
+                  You must Enter Valid Town Name
+                </div>
+              </div>
+            </div>
+              <!--City-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.city.errors}" type="text" placeholder="City" formControlName='city' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.city.errors">
+                <div *ngIf="submitted && myForm.controls.city.errors.required" class="text-danger">
+                  Enter your City Name
+                </div>
+                <div *ngIf="submitted && myForm.controls.city.errors.city">
+                  You must Enter Valid City Name
+                </div>
+              </div>
+            </div>
+              <!--State-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.state.errors}" type="text" placeholder="State" formControlName='state' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.state.errors">
+                <div *ngIf="submitted && myForm.controls.state.errors.required" class="text-danger">
+                  Enter your State Name
+                </div>
+                <div *ngIf="submitted && myForm.controls.state.errors.state">
+                  You must Enter Valid State Name
+                </div>
+              </div>
+            </div>
+              <!--Country-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.house_no.errors}" type="text" placeholder="Country" formControlName='country' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.country.errors">
+                <div *ngIf="submitted && myForm.controls.country.errors.required" class="text-danger">
+                  Enter your Country Name
+                </div>
+                <div *ngIf="submitted && myForm.controls.country.errors.country">
+                  You must Enter Valid Country name
+                </div>
+              </div>
+            </div>
+              <!--Pincode-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.pincode.errors}" type="number" placeholder="Pin Code" formControlName='pincode' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.pincode.errors">
+                <div *ngIf="submitted && myForm.controls.pincode.errors.required" class="text-danger">
+                  Enter your Area Code or Zip Code
+                </div>
+                <div *ngIf="submitted && myForm.controls.pincode.errors.pincode">
+                  You must Enter Valid Area Code
+                </div>
+              </div>
+            </div>
+          <!--Organization-->
+            <div class="form-group">
+              <select [ngClass]="{'is-invalid': submitted && myForm.controls.organization.errors}" type="text" placeholder="Organization" formControlName='organization' required class="form__input">
+                <option *ngFor="let item of employers" value="{{item}}">{{item}}</option>
+              </select>
+              <div *ngIf="submitted && myForm.controls.organization.errors">
+                <div *ngIf="submitted && myForm.controls.organization.errors.required" class="text-danger">
+                  Select your Organization
+                </div>
+                <div *ngIf="submitted && myForm.controls.organization.errors.organization">
+                  Select some valid value
+                </div>
+              </div>
+            </div>
+          <!--Qualification-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.qualification.errors}" type="text" placeholder="Qualification" formControlName='qualification' required class="form__input" />
+              <div *ngIf="submitted && myForm.controls.qualification.errors">
+                <div *ngIf="submitted && myForm.controls.qualification.errors.required" class="text-danger">
+                  Enter you Highest Degree
+                </div>
+                <div *ngIf="submitted && myForm.controls.qualification.errors.qualification">
+                  You must Enter Valid Highest Degree You Have
+                </div>
+              </div>
+            </div>
+          <!--Mobile-->
+            <div class="form-group">
+              <input [ngClass]="{'is-invalid': submitted && myForm.controls.mobile.errors}" type="text" placeholder="Mobile" formControlName='mobile' required class="form__input" />
+              <button class="btn" (click)="addMobile()">Add Mobile</button>
+              <div *ngIf="submitted && myForm.controls.mobile.errors">
+                <div *ngIf="submitted && myForm.controls.mobile.errors.required" class="text-danger">
+                  Enter your Mobile Number
+                </div>
+                <div *ngIf="submitted && myForm.controls.mobile.errors.mobile">
+                  You must Enter Valid Mobile number
+                </div>
+              </div>
+            </div>
+            <form [formGroup]="empForm">
+              <div formArrayName="mobiles">
+                <div *ngFor="let mobile of mobiles().controls; let empIndex=index">
+                  <div [formGroupName]="empIndex" class="form-group row">
+                    <input type="text" class="form__input" placeholder="mobile no" formControlName="mobile">
+                    <button class="btn btn-danger" (click)="removeEmployee(empIndex)">RemoveMobile</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--Experience-->
+          <div class="form-group">
+            <input [ngClass]="{'is-invalid': submitted && myForm.controls.experience.errors}" type="number" placeholder="Experience" formControlName='experience' required class="form__input" />
+            <div *ngIf="submitted && myForm.controls.experience.errors">
+              <div *ngIf="submitted && myForm.controls.experience.errors.required" class="text-danger">
+                Enter Zero if Fresher
+              </div>
+              <div *ngIf="submitted && myForm.controls.experience.errors.experience">
+                You must Enter Valid Year of Experience
+              </div>
+            </div>
+          </div>
+          <!--Gender-->
+          <div class="form-group">
+
+            <select [ngClass]="{'is-invalid': submitted && myForm.controls.gender.errors}" type="text" placeholder="Gender" formControlName='gender' required class="form__input">
+              <option disabled>&#45;&#45;Select&#45;&#45;</option>
+              <option value="M" required>Male</option>
+              <option value="F">Female</option>
+            </select>
+            <div *ngIf="submitted && myForm.controls.gender.errors">
+              <div *ngIf="submitted && myForm.controls.gender.errors.required" class="text-danger">
+                Select your Gender
+              </div>
+              <div *ngIf="submitted && myForm.controls.gender.errors.gender">
+                You must select valid gender
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+
+            <input type="file" placeholder="Image" class="form-control" (change)="upload($event.target.files)" required/>
+          </div>
+        </form>
+        <!--Image-->
+      </div>
+      <div class="form-group row">
+        <button (click)="add()" class="btn btn-success">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+
+<div class="para">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="form-group row">
+        <label>First Name</label>
+        <input type="text" class="form-control" [(ngModel)]="emp.fname" required/>
+      </div>
+      <div class="form-group row">
+        <label>Last Name</label>
+        <input type="text" class="form-control" [(ngModel)]="emp.lname" required/>
+      </div>
+      <div class="form-group row">
+        <label>Date of Birth</label>
+        <input type="date"class="form-control" [(ngModel)]="emp.dob"required/>
+      </div>
+      <div class="form-group row">
+        <label>Email</label>
+        <input type="email"class="form-control" [(ngModel)]="emp.email" required/>
+      </div>
+      <div class="form-group row">
+        <label>Password</label>
+        <input type="password"class="form-control" [(ngModel)]="emp.password" required/>
+      </div>
+      <div class="form-group row">
+        <label>Address</label>
+        <div class="form-group row">
+          <label>House/Flat No.</label>
+          <input type="number"class="form-control" [(ngModel)]="emp.address.house_no" required/>
+        </div>
+        <div class="form-group row">
+          <label>Street</label>
+          <input type="text"class="form-control" [(ngModel)]="emp.address.street" required/>
+        </div>
+        <div class="form-group row">
+          <label>Town</label>
+          <input type="text"class="form-control" [(ngModel)]="emp.address.town" required/>
+        </div>
+        <div class="form-group row">
+          <label>City</label>
+          <input type="text"class="form-control" [(ngModel)]="emp.address.city" required/>
+        </div>
+        <div class="form-group row">
+          <label>State</label>
+          <input type="text"class="form-control" [(ngModel)]="emp.address.state" required/>
+        </div>
+        <div class="form-group row">
+          <label>Country</label>
+          <input type="text"class="form-control" [(ngModel)]="emp.address.country" required/>
+        </div>
+        <div class="form-group row">
+          <label>Pin-Code</label>
+          <input type="text"class="form-control" [(ngModel)]="emp.address.pincode" required/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label>Organization</label>
+        <select class="form-control" [(ngModel)]="emp.organization">
+          <option disabled>&#45;&#45;Select&#45;&#45;</option>
+          <option *ngFor="let item of employers" value="{{item}}">{{item}}</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Qualification</label>
+        <input type="text" class="form-control" [(ngModel)]="emp.qualification" required/>
+      </div>
+      <div class="form-group row">
+        <label>Experience</label>
+        <input type="number" class="form-control" [(ngModel)]="emp.experience" required/>
+      </div>
+      <div class="form-group row">
+        <label>Mobile Number</label>
+        <input type="text" class="form-control" [(ngModel)]="emp.mobile[0]" required/>
+
+      </div>
+      <div class="form-group row">
+        <form [formGroup]="empForm">
+          <div formArrayName="mobiles">
+            <div *ngFor="let mobile of mobiles().controls; let empIndex=index">
+              <div [formGroupName]="empIndex">
+                <div>
+                  <input type="text" formControlName="mobile" placeholder="{{empIndex+2}} mobile">
+                  <button class="button b3" (click)="removeEmployee(empIndex)">RemoveMobile</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <button class="button b3" (click)="addMobile()">Add Mobile</button>
+      </div>
+      <div class="form-group row">
+        <label>Gender</label>
+        <select class="form-control" [(ngModel)]="emp.gender">
+          <option disabled>&#45;&#45;Select&#45;&#45;</option>
+          <option value="M" required>Male</option>
+          <option value="F">Female</option>
+          `             </select>
+      </div>
+      <div class="form-group row">
+        <label>Image</label>
+        <input type="file" class="form-control" (change)="upload($event.target.files)" required/>
+      </div>
+      <pre>{{message}}</pre>
+      <button class="button bt" (click)="add()">Submit</button>
+    </div>
+  </div>
+</div>
+-->

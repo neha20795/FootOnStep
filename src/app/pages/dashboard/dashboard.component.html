@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row main-content bg-success text-center">
+    <div class="col-md-4 text-center company__info">
+      <h4 class="company_title">Dashboard</h4>
+      <ul>
+        <li><a (click)="call(1)">Update Details</a></li>
+        <li><a (click)="call(2)">Upload Images</a></li>
+
+        <li><a (click)="call(3)">Review given by you</a></li>
+        <li><a (click)="call(4)">Reviews about you</a></li>
+        <li><a (click)="call(5)">Confidential Info Request</a></li>
+        <li><a (click)="call(6)">Change Password</a></li>
+      </ul>
+    </div>
+    <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+      <div class="container-fluid">
+        <div class="row offset-2 he">
+          <h2>{{showselectedData}}</h2>
+          <p>{{msg}}</p>
+          <p>{{info | json}}</p>
+        </div>
+        <div class="row">
+          <button class="btn" routerLink="/{{url}}">Click here to navigate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="para">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="form-group">
+        <label>Photos</label>
+        <input type="file" class="form__input" (change)="upload($event.target.files)" required/>
+        <button class="btn btn-success" (click)="add()">Submit</button>
+      </div>
+    </div>
+    <div class="row">
+      <img class="img1" src="../../../assets/images/{{val}}/{{url}}">
+    </div>
+    <div class="row">
+      <div class="form-group" *ngIf="total>0">
+        <button class="btn1 mr-5" (click)="previous()">Previous</button>
+        <button class="btn2 ml-5" (click)="next()">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class="para">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="form-group row">
+        <label>Photos</label>
+        <input type="file" class="form-control" (change)="upload($event.target.files)" required/>
+      </div>
+      <button class="btn-success" (click)="add()">Submit</button>
+    </div>
+  </div>
+  <div class="row" style="margin-left: 500px; margin-top: 100px">
+    <div>
+      <img src="../../../assets/images/{{val}}/{{url}}" style="height: 500px; width: 500px;">
+    </div>
+
+  </div>
+  <div class="row" style="margin-left: 400px; margin-top: 20px">
+    <button (click)="previous()" style="margin-left: 10px">Previous</button>
+    <button (click)="next()" style="margin-left: 450px">Next</button>
+  </div>
+</div>
+-->

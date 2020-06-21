@@ -1,0 +1,92 @@
+<div class="head">
+  <div *ngFor=" let empe of employee">
+    <div class="container mt-6" style="width: 900px">
+      <h2>Anonymous</h2>
+      <p></p>
+      <div class="media border p-3">
+        <img src="../../../../assets/images/employer/mono.png" alt="" class="mr-3 ml-4 mt-6 rounded-circle" style="width:100px; height: 150px;">
+        <div class="media-body">
+          <h4>To</h4>
+          <ul>
+            <li>{{empe.empid}}</li>
+          </ul>
+          <h4>Good</h4>
+          <ul>
+<!--            <div *ngFor="let good of empe.good">-->
+              <li>{{empe.good}}</li>
+<!--            </div>-->
+          </ul>
+          <h4>Bad</h4>
+          <ul>
+<!--            <div *ngFor="let bad of empe.bad">-->
+              <li>{{empe.bad}}</li>
+<!--            </div>-->
+          </ul>
+          <h4>Review</h4>
+          <ul>
+<!--            <div *ngFor="let review of empe.review">-->
+              <li>{{empe.review}}</li>
+<!--            </div>-->
+          </ul>
+<!--          <h4>Position</h4>-->
+<!--          <ul>-->
+<!--            <li>{{empe.position}}</li>-->
+<!--          </ul>-->
+          <h4>Rating</h4>
+          <ul>
+            <li>{{empe.rating}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<!--
+<div class="head">
+      <div class="fluid-container">
+        <div class="row">
+          <div class="col-4 offset-1">
+            <div *ngFor=" let empe of employee">
+              <div class="bgset">
+                <div class="card-body">
+                  <table id="emp">
+                    <tr>
+                      <td>Employee</td>
+                      <td>{{empe.empid }}</td>
+                    </tr>
+                    <tr>
+                      <td>Good</td>
+                      <td>{{empe.good | json}}</td>
+                    </tr>
+                    <tr>
+                      <td>Bad</td>
+                      <td>{{empe.bad | json}}</td>
+                    </tr>
+                    <tr>
+                      <td>Position</td>
+                      <td>{{empe.position}}</td>
+                    </tr>
+                    <tr>
+                      <td>Review</td>
+                      <td>{{empe.review | json}}</td>
+                    </tr>
+                    <tr>
+                      <td>Rating</td>
+                      <td>{{empe.rating}}</td>
+                    </tr>
+
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+-->

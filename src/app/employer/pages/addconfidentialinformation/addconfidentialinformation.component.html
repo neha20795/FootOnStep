@@ -1,0 +1,434 @@
+
+<div class="para">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div class="form-group row">
+        <label>Date of Joining</label>
+        <input type="date" class="form__input" [(ngModel)]="maininformation.dateOfJoining"  required/>
+      </div>
+      <div class="form-group row">
+        <label>Date of Leaving</label>
+        <input type="date" class="form__input" [(ngModel)]="maininformation.dateOfLeaving"  required/>
+      </div>
+      <div class="form-group row">
+        <label>Salary at Start</label>
+        <input type="number" class="form__input" [(ngModel)]="maininformation.initialSalary"  required/>
+      </div>
+      <div class="form-group row">
+        <label>Salary Now</label>
+        <input type="number" class="form__input" [(ngModel)]="maininformation.currentSalary"  required/>
+      </div>
+      <div class="form-group row">
+        <label>Reason to Leave</label>
+        <input type="text" class="form__input" [(ngModel)]="maininformation.reasonToLeave"  required/>
+      </div>
+      <div class="form-group row">
+        <label>Avoids gossip</label>
+        <select class="form__input" [(ngModel)]="information.avoidGossip">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Team player</label>
+        <select class="form__input" [(ngModel)]="information.teamPlayer">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Communicates well</label>
+        <select class="form__input" [(ngModel)]="information.communicatesWell">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Disciplined</label>
+        <select class="form__input" [(ngModel)]="information.disciplined">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Punctual</label>
+        <select class="form__input" [(ngModel)]="information.punctual">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Driven to succeed</label>
+        <select class="form__input" [(ngModel)]="information.drivenToSucceed">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Readily adaptable</label>
+        <select class="form__input" [(ngModel)]="information.readilyAdaptable">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Has initiative</label>
+        <select class="form__input" [(ngModel)]="information.hasInitiative">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Forthright and honest</label>
+        <select class="form__input" [(ngModel)]="information.ForthrightandHonest">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Can lead</label>
+        <select class="form__input" [(ngModel)]="information.canLead">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Detail-oriented</label>
+        <select class="form__input" [(ngModel)]="information.detailOriented">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Energetic and enthusiastic</label>
+        <select class="form__input" [(ngModel)]="information.energeticandEnthusiastic">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Welcomes challenges</label>
+        <select class="form__input" [(ngModel)]="information.welcomesChallenges">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Remains optimistic</label>
+        <select class="form__input" [(ngModel)]="information.remainsOptimistic">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Goes above and beyond</label>
+        <select class="form__input" [(ngModel)]="information.goesAboveandBeyond">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Dependable</label>
+        <select class="form__input" [(ngModel)]="information.dependable">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Strong work ethic</label>
+        <select class="form__input" [(ngModel)]="information.strongWorkethic">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Gets things done on time</label>
+        <select class="form__input" [(ngModel)]="information.getsthingsDoneOnTime">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Constantly improving their skills</label>
+        <select class="form__input" [(ngModel)]="information.constantlyImprovingtheirSkills">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Puts in necessary hours</label>
+        <select class="form__input" [(ngModel)]="information.putsinNecessaryhHours">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Professional</label>
+        <select class="form__input" [(ngModel)]="information.professional">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Can prioritize and organize</label>
+        <select class="form__input" [(ngModel)]="information.canprioritizeAndOrganize">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label> Respects others</label>
+        <select class="form__input" [(ngModel)]="information.respectsoOthers">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Overcomes obstacles</label>
+        <select class="form__input" [(ngModel)]="information.overcomesObstacles">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Follows trends</label>
+        <select class="form__input" [(ngModel)]="information.followsTrends">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Reliable and responsible</label>
+        <select class="form__input" [(ngModel)]="information.reliableandResponsible">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Actively supports company goals</label>
+        <select class="form__input" [(ngModel)]="information.activelySupportsCompanyGoals">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Involved with company events</label>
+        <select class="form__input" [(ngModel)]="information.involvedWithCompanyEvents">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Grounded and humble</label>
+        <select class="form__input" [(ngModel)]="information.groundedandHumble">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Inspires others</label>
+        <select class="form__input" [(ngModel)]="information.inspiresOthers">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Provides fresh ideas</label>
+        <select class="form__input" [(ngModel)]="information.providesFreshideas">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Personal values align with company values</label>
+        <select class="form__input" [(ngModel)]="information.personalValuesAlignwithCompanyValues">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Personable</label>
+        <select class="form__input" [(ngModel)]="information.personable">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Handles pressure well</label>
+        <select class="form__input" [(ngModel)]="information.handlesPressureWell">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Marketable for clients</label>
+        <select class="form__input" [(ngModel)]="information.marketableforClients">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Attentive listener</label>
+        <select class="form__input" [(ngModel)]="information.attentiveListener">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Motivates others</label>
+        <select class="form__input" [(ngModel)]="information.motivatesOthers">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Takes responsibility</label>
+        <select class="form__input" [(ngModel)]="information.takesResponsibility">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Varies tasks willingly</label>
+        <select class="form__input" [(ngModel)]="information.variesTasksWillingly">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Relatable</label>
+        <select class="form__input" [(ngModel)]="information.relatable">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Articulate</label>
+        <select class="form__input" [(ngModel)]="information.articulate">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Mentions concerns</label>
+        <select class="form__input" [(ngModel)]="information.mentionsConcerns">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Appreciates constructive criticism</label>
+        <select class="form__input" [(ngModel)]="information.appreciatesConstructiveCriticism">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Tech-savvy</label>
+        <select class="form__input" [(ngModel)]="information.Techsavvy">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Quick adaptation to role</label>
+        <select class="form__input" [(ngModel)]="information.Quickadaptationtorole">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Interacts effectively</label>
+        <select class="form__input" [(ngModel)]="information.interactseffectively">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label> Able to vary role</label>
+        <select class="form__input" [(ngModel)]="information.abletovaryrole">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label> Bends over backward</label>
+        <select class="form__input" [(ngModel)]="information.bendsOverBackward">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Speaks their mind</label>
+        <select class="form__input" [(ngModel)]="information.speakstheirMind">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Just nice</label>
+        <select class="form__input" [(ngModel)]="information.justnice">
+          <option disabled>--Select--</option>
+          <option value="y" required>Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label>Other information</label>
+
+      </div>
+
+      <pre>{{message}}</pre>
+      <button class="button bt" (click)="add()">Submit</button>
+    </div>
+  </div>
+</div>
